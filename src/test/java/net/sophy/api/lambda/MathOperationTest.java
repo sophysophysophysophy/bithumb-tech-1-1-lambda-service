@@ -18,7 +18,7 @@ class MathOperationTest {
 
     @Test @DisplayName("사칙연산 프로그램")
     void apply() {
-        MathOperation mathOperation = (x, y) -> x + y;          //선언
+        MathOperation mathOperation = (a, b) -> a + b;          //선언
         int result = mathOperation.apply(2, 7);           //실행
         assertThat(result, is(equalTo(9)));             //테스트
     }
